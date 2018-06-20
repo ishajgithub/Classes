@@ -1,0 +1,41 @@
+#initials
+import turtle
+
+def draw_initials():
+    window = turtle.Screen()
+    window.bgcolor("light pink")
+#make 'I'
+    ingie = turtle.Turtle()
+    ingie.shape("turtle")
+    ingie.color("red")
+    ingie.speed(3)
+
+    ingie.forward(100)
+    ingie.backward(50)
+    ingie.right(90)
+    ingie.forward(100)
+    ingie.right(90)
+    ingie.forward(50)
+    ingie.backward(50)
+    ingie.right(180)
+    ingie.forward(50)
+#make 'J' on top of 'I'
+    jimmi = turtle.Turtle()
+    jimmi.setpos(30,30)
+    jimmi.shape("triangle")
+    jimmi.color("black")
+    jimmi.speed(3)
+
+    jimmi.forward(100)
+    jimmi.backward(50)
+    jimmi.right(90)
+    jimmi.forward(100)
+    jimmi.right(90)
+    jimmi.forward(50)
+    jimmi.right(90)
+    jimmi.forward(30)
+    
+
+    window.exitonclick()
+
+draw_initials()
